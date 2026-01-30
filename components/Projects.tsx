@@ -14,25 +14,40 @@ const projects = [
       "PostgreSQL (Neon)",
       "TailwindCSS",
       "React Router",
-      "Gemini API"
+      "Gemini API",
     ],
     live: "https://real-estate-token-simulator.vercel.app/admin/assets",
-    github: "https://github.com/shreyas-khandare/real-estate-token-simulator"
+    github: "https://github.com/shreyas-khandare/real-estate-token-simulator",
+  },
+  {
+    title: "Bhavsar Tiffin — Order Management Platform",
+    description:
+      "A production-ready full-stack web platform for managing daily tiffin orders and train delivery requests with admin dashboard, JWT auth, MongoDB lead tracking, and WhatsApp dispatch integration.",
+    tech: [
+      "Next.js 16",
+      "React 19",
+      "MongoDB Atlas",
+      "JWT Auth",
+      "TailwindCSS",
+      "Framer Motion",
+    ],
+    live: "https://bhavsar-tiffin.vercel.app/",
+    github: "https://github.com/shreyas-khandare/bhavsar-tiffin",
   },
   {
     title: "Trading App Website",
     description:
       "Full-stack simulated trading platform with order execution flows, portfolio valuation, and real-time UI updates.",
     tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/shreyas-khandare/Stock-Trading-app"
+    github: "https://github.com/shreyas-khandare/Stock-Trading-app",
   },
   {
     title: "Airbnb Price Prediction AI",
     description:
       "Machine Learning model for predicting Airbnb listing prices using Random Forest (R² = 0.87). Includes a Tkinter-based GUI.",
     tech: ["Python", "Sklearn", "Pandas", "Tkinter"],
-    github: "https://github.com/shreyas-khandare/Airbnb-recommender"
-  }
+    github: "https://github.com/shreyas-khandare/Airbnb-recommender",
+  },
 ];
 
 export function Projects() {
@@ -55,9 +70,7 @@ export function Projects() {
               {project.title}
             </h3>
 
-            <p className="text-gray-400 text-sm mt-2">
-              {project.description}
-            </p>
+            <p className="text-gray-400 text-sm mt-2">{project.description}</p>
 
             <div className="flex flex-wrap gap-2 mt-4">
               {project.tech.map((t) => (
