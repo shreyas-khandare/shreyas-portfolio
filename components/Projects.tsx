@@ -4,6 +4,22 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    title: "CloudBox - Cloud Storage Platform",
+    description:
+      "Built and deployed a secure full-stack cloud storage platform using Express, Prisma, PostgreSQL, and Amazon S3, with JWT auth, role-based access, presigned URLs, and an admin dashboard, containerized with Docker and hosted on AWS EC2 with Nginx.",
+    tech: [
+      "React",
+      "Node.js",
+      "Express",  
+      "AWS EC2, S3",
+      "PostgreSQL",
+      "TypeScript",
+      "Docker",
+    ],
+    live: "https://cloudbox-s3-storage.vercel.app/",
+    github: "https://github.com/shreyas-khandare/cloudbox-s3-storage",
+  },
+  {
     title: "Asset Simulator Fractional Real Estate Tokenization",
     description:
       "A simulation platform for fractional tokenization of real-estate assets. Supports asset creation (admin), token issuance, fractional purchasing, portfolio simulation, and AI-powered investment insights.",
@@ -33,20 +49,6 @@ const projects = [
     ],
     live: "https://bhavsar-tiffin.vercel.app/",
     github: "https://github.com/shreyas-khandare/bhavsar-tiffin",
-  },
-  {
-    title: "Trading App Website",
-    description:
-      "Full-stack simulated trading platform with order execution flows, portfolio valuation, and real-time UI updates.",
-    tech: ["React", "Node.js", "Express", "MongoDB"],
-    github: "https://github.com/shreyas-khandare/Stock-Trading-app",
-  },
-  {
-    title: "Airbnb Price Prediction AI",
-    description:
-      "Machine Learning model for predicting Airbnb listing prices using Random Forest (R² = 0.87). Includes a Tkinter-based GUI.",
-    tech: ["Python", "Sklearn", "Pandas", "Tkinter"],
-    github: "https://github.com/shreyas-khandare/Airbnb-recommender",
   },
 ];
 

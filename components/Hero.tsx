@@ -34,7 +34,7 @@ export function Hero() {
 
         {/* Download Resume */}
         <motion.a
-          href="https://drive.google.com/uc?export=download&id=1eBc9tSM-_uKK_nOqKh54pmw85OY-USXG"
+          href="https://drive.google.com/file/d/1i_3matzXDVh0wemBSA7v_giHoevDbSE-/view?usp=drive_link"
           whileHover={{ scale: 1.05 }}
           className="px-6 py-3 border border-white/20 text-gray-200 rounded-full backdrop-blur-sm hover:bg-white/10"
         >
