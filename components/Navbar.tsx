@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 interface NavItem {
@@ -139,11 +140,18 @@ export function Navbar() {
         <a
           href="/home"
           onClick={(e) => handleNavClick(e, NAV_ITEMS[0])}
-          className="group flex items-center gap-2.5 text-base font-semibold text-[#F1F5F9] focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded"
+          className="group flex items-center gap-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded py-1"
+          aria-label="shreyas. — Home"
         >
-          <span className="w-2 h-2 rounded-full bg-blue-500 transition-transform group-hover:scale-125" />
-          <span>Shreyas Khandare</span>
-          <span className="hidden sm:inline text-xs font-normal text-[#778396] pl-1 border-l border-[#273244]">
+          <Image
+            src="/shreyas-wordmark.png"
+            alt="shreyas."
+            width={100}
+            height={30}
+            priority
+            className="h-6 sm:h-7 w-auto object-contain transition-opacity group-hover:opacity-90"
+          />
+          <span className="hidden sm:inline text-xs font-mono font-normal text-[#778396] pl-2.5 border-l border-[#273244]">
             Software Engineer
           </span>
         </a>
